@@ -190,6 +190,7 @@ a {
 .career {
     background-color: #76C936;
     padding: 100px 0;
+    margin-bottom: 100px;
 }
 
 .card {
@@ -216,13 +217,112 @@ a {
 .card-text:last-child {
     font-size: 23px;
 }
-.career .container h1{
+
+.career .container h1 {
     text-align: center;
     font-size: 50px;
     color: white;
+    margin-bottom: 40px;
+}
+
+.career .col {
+    padding: 12px 25px;
 }
 
 
+
+.card {
+    width: 100%;
+}
+
+form .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback .container h1 {
+    margin-top: 100px;
+}
+
+form .container p {
+    margin-bottom: 0px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #76C936;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+form .container .btn-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 83px;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 20px;
+    border: 2px solid #76C936;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+form .container .btn-success:hover {
+    background-color: #76C936;
+    transition: .5s;
+    color: #ffffff;
+    box-shadow: 4px 4px 42px 27px rgba(118, 201, 54, 0.40);
+}
+
+.feedback {
+    margin-bottom: 100px;
+}
+footer .section-contacts {
+    background: #76C936;
+    padding: 50px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+footer .section-contacts .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+footer .section-contacts .container .cards {
+    display: flex;
+    gap: 100px;
+}
+footer .section-contacts .container .cards .card1 {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+footer h1{
+    color: white;
+}
+.t-20{
+    text-decoration: none;
+    color: white;
+}
+.t-20:hover{
+    color: white;
+}
 
 @media(max-width:1400px) {
     .iam img {
@@ -275,6 +375,10 @@ a {
 
     .skills .container .block {
         height: 604px;
+    }
+
+    .card-text:last-child {
+        font-size: 18px;
     }
 }
 
@@ -347,6 +451,32 @@ a {
         width: 60%;
         height: 600px;
     }
+
+    .card-text:last-child {
+        font-size: 8px;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+
+    form .container .btn-success {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 63px;
+        background-color: #ffffff;
+        color: #222222;
+        border-radius: 20px;
+        border: 2px solid #76C936;
+        margin-top: 30px;
+        transition: .5s;
+        font-size: 12px;
+    }
+
+
+
 }
 
 @media(max-width:768px) {
@@ -410,9 +540,35 @@ a {
         font-size: 10px;
     }
 
+    .card-text:last-child {
+        font-size: 14px;
+    }
+    form .container .btn-success {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 51px;
+        background-color: #ffffff;
+        color: #222222;
+        border-radius: 20px;
+        border: 2px solid #76C936;
+        margin-top: 30px;
+        transition: .5s;
+        font-size: 12px;
+    }
+
 }
 
 @media(max-width:576px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .headerrr .container {
+        justify-content: space-around;
+    }
+
     .headerrr .container {
         flex-direction: column;
     }
@@ -473,6 +629,56 @@ a {
 
     .slider .container h5 {
         font-size: 12px;
+    }
+
+    .career .row {
+        flex-direction: column;
+    }
+
+    .card-text:last-child {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .career .col {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .slider {
+        background-color: #222222;
+        border-radius: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .slider .col {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider .container {
+        padding: 50px 0;
+    }
+
+    .career .container h1 {
+        font-size: 38px;
+    }
+
+    .career {
+        padding: 50px 0;
+    }
+
+    .slider .row {
+        color: white;
+    }
+    form .container .btn-success {
+        width: 150px;
     }
 
 
